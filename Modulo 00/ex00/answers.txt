@@ -1,0 +1,17 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    answers.txt                                        :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: begarijo <begarijo@student.42malaga.com>   +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/04/11 15:53:15 by begarijo          #+#    #+#              #
+#    Updated: 2023/04/11 15:58:54 by begarijo         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# pip list
+# conda search numpy
+# conda remove numpy
+# pip install numpy
+# pip freeze python >> requirements.txt
