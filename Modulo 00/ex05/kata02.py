@@ -1,25 +1,26 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    exec.py                                            :+:      :+:    :+:    #
+#    kata02.py                                          :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: begarijo <begarijo@student.42malaga.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/04/11 15:59:51 by begarijo          #+#    #+#              #
-#    Updated: 2023/04/12 09:52:19 by begarijo         ###   ########.fr        #
+#    Created: 2023/04/12 16:26:55 by begarijo          #+#    #+#              #
+#    Updated: 2023/04/15 12:05:53 by begarijo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#!/usr/bin/env python3
+kata = (2019, 9, 25, 3, 30)
 
-import sys
+def main():
+    """docstring for main"""
+    y = str(kata[0])
+    m = str(kata[1])
+    d = str(kata[2])
+    h = str(kata[3])
+    mi = str(kata[4])
+    print("{y:>04}/{m:>02}/{d:>02} {h:>02}:{mi:>02}".format(y=y, m=m, d=d, h=h, mi=mi))
+    return
 
-def rev_alpha(string):
-    return string.swapcase()[::-1]
-
-if (len(sys.argv) > 1):
-    s = ' '.join(sys.argv[1:])
-    res = rev_alpha(s)
-    print(res)
-else:
-    print("Error! Usage python3 exec.py <str>")
+if (__name__=='__main__'):
+    main()

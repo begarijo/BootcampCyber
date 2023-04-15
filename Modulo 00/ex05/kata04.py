@@ -1,25 +1,27 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    exec.py                                            :+:      :+:    :+:    #
+#    kata04.py                                          :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: begarijo <begarijo@student.42malaga.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/04/11 15:59:51 by begarijo          #+#    #+#              #
-#    Updated: 2023/04/12 09:52:19 by begarijo         ###   ########.fr        #
+#    Created: 2023/04/12 16:35:11 by begarijo          #+#    #+#              #
+#    Updated: 2023/04/12 16:41:05 by begarijo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#!/usr/bin/env python3
+kata = (0, 4, 132.42222, 10000, 12345.67)
 
-import sys
+def main():
+    """docstring for main"""
+    mod = kata[0]
+    ex = kata[1]
+    n1 = kata[2]
+    n2 = kata[3]
+    n3 = kata[4]
+    print("module_{mod:>02d}, ex_{ex:>02d} : {n1:.2f}, {n2:.2e}, {n3:.2e}".format(mod=mod, ex=ex, n1=n1, n2=n2, n3=n3))
+    return
 
-def rev_alpha(string):
-    return string.swapcase()[::-1]
+if (__name__=='__main__'):
+    main()
 
-if (len(sys.argv) > 1):
-    s = ' '.join(sys.argv[1:])
-    res = rev_alpha(s)
-    print(res)
-else:
-    print("Error! Usage python3 exec.py <str>")
