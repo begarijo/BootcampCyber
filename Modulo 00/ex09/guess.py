@@ -6,7 +6,7 @@
 #    By: begarijo <begarijo@student.42malaga.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/14 10:43:44 by begarijo          #+#    #+#              #
-#    Updated: 2023/04/14 10:59:30 by begarijo         ###   ########.fr        #
+#    Updated: 2023/04/15 14:16:50 by begarijo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ def check_num():
     while (n != secret):
         n = input("What's your guess?:D\n")
         if (n == "exit"):
+            print("{t} Attempts".format(t=t))
             print("Okay! Bye:)")
             break
         elif (not n.isdigit() or int(n) < 1 or int(n) > 99):
@@ -36,7 +37,7 @@ def check_num():
                 print("The answer to the ultimate question of life, the universe and everything is 42!")
             if (t == 1):
                 print("Congratulations! You achieve it in your first try! MAKINON")
-            else:
+            elif(n == secret):
                 print("Congratulations! It only took you {t} attemps!".format(t=t))
 
 def main():

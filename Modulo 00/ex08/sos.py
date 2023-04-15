@@ -6,7 +6,7 @@
 #    By: begarijo <begarijo@student.42malaga.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/13 17:01:07 by begarijo          #+#    #+#              #
-#    Updated: 2023/04/14 10:12:22 by begarijo         ###   ########.fr        #
+#    Updated: 2023/04/15 14:08:58 by begarijo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,7 +74,7 @@ def main():
             if encoded:
                 encoded_m.append(encoded)
             else:
-                print("Not encoded")
+                print("ERROR")
                 sys.exit(1)
         print(" ".join(encoded_m))
 
