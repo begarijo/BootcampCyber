@@ -90,7 +90,7 @@ def main():
             if (option == 1):
                 add_recipe()
             elif (option == 2):
-                name = input("What recipe do you want to delete, so puta?")
+                name = input("What recipe do you want to delete?")
                 del_recipe(name)
             elif (option == 3):
                 name = input("Which one?")
