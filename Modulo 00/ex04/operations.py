@@ -36,9 +36,9 @@ def main():
     except:
         print("Not integers!!")
     if (len(sys.argv) > 3):
-        print("Too many args imbecil")
+        print("Too many args")
     elif (len(sys.argv) < 3):
-        print("Too few args tontito")
+        print("Too few args")
 
 if (__name__=='__main__'):
     main()
